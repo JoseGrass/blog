@@ -1,0 +1,171 @@
+/*Se declara una variable para manejar el color principal de la pàgina*/
+:root{
+    --primary-color: #ffff56;
+ }
+ 
+ /*Diseño general-permite que el contenido mo exceda el tamaño de la pantalla y no genere scroll lateral*/
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+ /*Tamaño de la letra para trabajar en 1rem=10px*/
+ html{
+     font-size: 62.5%;
+     height: 100%;
+
+ }
+
+ body{
+    height: 100%;
+ }
+ nav{
+    position: fixed;
+
+ }
+ .container{
+     font-size: 1.7rem;/*Se establece el tamaño de letra general para el contenedor princiapl*/
+     font-family: "Roboto", sans-serif;/*Tipo de letra*/
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     
+ }
+
+a{
+    color: inherit; /* Hereda el color del elemento contenedor */
+    text-decoration: none; /* Quita decoracion del texto */
+}
+
+
+  /*menu principal*/
+
+  .menu-logo{
+    position: relative;
+    
+ }
+
+ .menu{
+    width: 100%;
+    height: auto;
+    font-size: 1.7rem;
+    color: black;
+    background-color: rgba(255, 255, 86, 0.95);/*Opacidad*/
+    padding: 15px 100px 15px 200px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    z-index: 1000;
+    display: inline;
+    align-content: center;
+ }
+
+ .menu-contenido{
+    top: 80%;
+    left: 55%;
+ }
+
+ .menu ul li{
+    list-style: none; /*retira el estilo de punto en la lista*/
+    width: 200px;
+ }
+
+ .menu ul li:hover{
+    text-decoration: underline; /*al pasar el mouse sobre el menu poner una linea bajo el texto*/
+ }
+
+ ul{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    justify-content: space-evenly;
+ }
+
+ /*Principal*/
+
+ .principal{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    justify-content: space-between;
+    padding-top: 200px;
+ }
+
+ .recuadro img{
+    width: 350px;
+    height: 350px;
+    padding-bottom: 10px;
+ }
+
+ .recuadro p{
+    border-bottom: 2px solid var(--primary-color);
+ }
+ .recuadro{
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.6rem;
+    border:  2px solid var(--primary-color);
+    padding: 15px;
+ }
+
+ .recuadro:hover{
+    transform: scale(1.08);
+ }
+
+ /*Footer*/
+
+footer{
+    background-color: var(--primary-color);
+    flex-direction: column;
+    margin-top: auto;
+    height: auto;
+    display: flex;
+    place-items:center;
+    color: black;
+    font-size: 1.7rem;
+    line-height: 50px;
+    
+ }
+
+ /* Estilos para el modal */
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1000;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.modal-content {
+   background: white;
+   padding: 20px;
+   border-radius: 8px;
+   width: 300px;
+   text-align: center;
+}
+
+.modal-content input {
+   width: 90%;
+   padding: 8px;
+   margin: 5px 0;
+   display: block;
+}
+
+.modal-content button {
+   background: #ffff56;
+   color: black;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+}
+
+.close {
+   float: right;
+   font-size: 25px;
+   cursor: pointer;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articulo3</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main class="container">
+
+        <nav class="menu">
+            <div class="menu-contenido">
+                <ul class="menu-lista">
+                    <li><a href="#" id="btnIngresar"><b>Ingresar</b></a></li>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="index1.html"><b>Tendencias  2025</b></a></li>
+                    <li><a href="index2.html"><b>IA y contenido web</b></a></li>
+                    <li><a href="index3.html"><b>Tailwind</b></a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <img src="imagenes/img7.jpg" alt="">
+        <div class="Art">
+            <h2>ITCSS: Estructura tu código CSS como un profesional</h2>
+            <div class="contenido">
+                <div class="contenido-titulo" onclick="toggleMenu()">☰ Contenido</div>
+                <div class="contenido-contenido" id="menuContenido">
+                    <ul>
+                        <li><a href="#sec1">¿Qué es ITCSS?</a></li>
+                        <li><a href="#sec2">Hablemos del triángulo</a></li>
+                        <li><a href="#sec3">Hablemos del triángulo</a></li>
+                        <li><a href="#sec4">Sus desventajas </a></li>
+                        <li><a href="#sec5">¿Dónde seguir aprendiendo</a></li>
+                        <li><a href="#sec6">Conclusión</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h3 id="sec1">¿Qué es ITCSS?</h3>
+            <section class="parrafo">
+                Su nombre viene de las siglas Inverted Triangle architecture for CSS, o en español, la arquitectura CSS del triángulo invertido. Simple y llanamente es un método en el que dividimos nuestro código en 7 directorios o archivos y dependiendo de la función que ocupe irá en un directorio u otro.
+            </section>
+        
+        
+            <h3 id="sec2">Hablemos del triángulo </h3>
+            
+            <section class="parrafo">
+                La forma de la que funciona es muy sencilla, desde la parte de arriba del triángulo hasta la parte de abajo lo que vamos logrando es un aumento de especificidad. <br>
+            </section>
+            <div class="img2"><img src="imagenes/img8.png" alt="" id="imagen1"></div>
+            <section class="parrafo">
+                A continuación para entrar un poco más en materia vamos a comentar cada uno de los puntos de este triángulo y ver cómo se trabaja a groso modo con ellos. <br>
+                <ul><b>Settings</b> Aquí declaramos las variables y métodos necesarios para los preprocesadores.</ul>
+                <ul><b>Generic</b> Código genérico que funcione como base para el proyecto, podemos tomar como ejemplo normalize.css que se encarga de resetear todos los diseños puestos por defecto en los navegadores.</ul>
+                <ul><b>Elements</b> electores de etiquetas básicas de html sin clases.</ul>
+                <ul><b>Object</b> Clases orientadas a la estructura de la página, por ejemplo, algunos aspectos del layout o mediaqueries para acomodar nuestro diseño. </ul>
+                <ul><b>Components</b> Estilos que se aplicarán a algunos bloques de nuestro documento, tales como el navegador, botones, etc.</ul>
+                <ul><b>Utilities</b> Este es el lugar donde sobreescribimos cualquier elemento o estilo que sea necesario y además curiosamente es el único lugar donde está permitido colocar los famosos “!important”.</ul>
+            </section>
+        
+            <h3 id="sec3">Algunas de sus ventajas</h3>
+            
+            <section class="parrafo">
+                Como habrás podido deducir, una vez que controlas esta metodología las ventajas pueden ser numerosas, pero en este caso te vamos a destacar algunas. <br>
+
+                <ul>Los<b>objetos de la página</b> están divididos en varios archivos y esto beneficia altamente a su futura reutilización.</ul>
+                <ul><b>Claridad</b> Este punto es sumamente importante pues una vez te acostumbras, encontrar el código que necesitas para modificar o reutilizar va a ser bastante sencillo.</ul>
+            </section>
+        
+            <h3 id="sec4">Sus desventajas</h3>
+
+        
+            <section class="parrafo">
+
+                Al ser una metodología y algo nuevo para tí, el principal problema puede ser primero aprenderlo y luego adaptarte o acostumbrarte a hacer eso de ella.
+
+                
+            </section>
+
+            <h3 id="sec5">¿Dónde seguir aprendiendo?</h3>
+            
+
+            <section class="parrafo">
+                Si te ha parecido curiosa o llamativa esta forma de estructurar tu código y quieres seguir aprendiendo o informándote desde baética vamos a recomendarte el siguiente artículo para poder informarte un poco más sobre el tema. Y además un vídeo de una charla en la que se habla un poco de la arquitectura CSS y del papel que ocupa ITCSS en ella. ? <br><br>
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/P6iPXgXC7HE?si=WYU5A4_LH_I83U8X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+            </section>
+
+        
+            
+
+            <h3 id="sec6">Conclusión</h3>
+
+        
+            <section class="parrafo">
+                Optimizar tu forma de trabajo y sobretodo tu código te hace ser más eficaz y a la vez más profesional, a día de hoy contar con una metodología de trabajo uniforme y efectiva es vital.En el caso de tus estilos ITCSS es una forma de ayudarte a ello, pero claro está que hay muchas más. ¿Y tú? ¿Qué método usas para ordenar y estructurar tu código?
+
+            </section>
+        </div>
+
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Iniciar Sesión</h2>
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" placeholder="Ingrese su usuario">
+                
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" placeholder="Ingrese su contraseña">
+                
+                <button id="loginBtn">Ingresar</button>
+                <p id="loginError" style="color: red; display: none;">Usuario o contraseña incorrectos</p>
+            </div>
+        </div>
+        <footer class="footer">
+            
+            <p> © 2025. Todos los derechos reservados.</p>
+        </footer>
+    </main>
+    
+</body>
+</html>
